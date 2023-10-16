@@ -4,4 +4,4 @@ vim.g.lazygit_floating_window_border_chars = {'╭','─', '╮', '│', '╯','
 vim.g.lazygit_floating_window_use_plenary = 0 -- use plenary.nvim to manage floating window if available
 vim.g.lazygit_use_neovim_remote = 1 -- fallback to 0 if neovim-remote is not installed
 
-vim.keymap.set("n", "<leader>sg", vim.cmd.LazyGit)
+vim.keymap.set("n", "<leader>g", vim.cmd.LazyGit)
