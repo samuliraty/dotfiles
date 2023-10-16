@@ -1,0 +1,10 @@
+*
+!.config/
+!.config/*
+!.config/nvim/
+!.config/nvim/*
+!.config/nvim/**/*
+!.gitignore
+!.hammerspoon/
+!.hammerspoon/*
+!.zshrc
