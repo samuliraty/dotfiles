@@ -1,10 +1,11 @@
 *
+!.gitignore
+!.zshrc
 !.config/
-!.config/*
 !.config/nvim/
 !.config/nvim/*
 !.config/nvim/**/*
-!.gitignore
+!.config/tmux/
+!.config/tmux/*
 !.hammerspoon/
 !.hammerspoon/*
-!.zshrc
