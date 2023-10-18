@@ -1,7 +1,7 @@
 *
 !.gitignore
 !.zshrc
-!.bootstrap.sh
+!bootstrap.sh
 !.config/
 !.config/nvim/
 !.config/nvim/*

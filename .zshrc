@@ -1,8 +1,8 @@
 export XDG_CONFIG_HOME="$HOME/.config"
 
 if [ ! -f ~/.bootstrap_done ]; then
- chmod +x ~/.bootstrap.sh
- ~/.bootstrap.sh
+ chmod +x ~/bootstrap.sh
+ ~/bootstrap.sh
 fi
 
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
