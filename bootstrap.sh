@@ -7,6 +7,7 @@ if [[ "$(uname)" != "Darwin" ]]; then
   if ! command -v brew &> /dev/null; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     eval "$(brew --prefix)/bin/brew shellenv"
+    ln -s /home/linuxbrew/.linuxbrew/bin/brew /usr/local/bin/brew
   fi
 
   if ! command -v zsh &> /dev/null; then
