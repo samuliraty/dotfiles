@@ -28,9 +28,11 @@ fuzzy_cd() {
   # Run fzf
   selected_path=$(echo "$prioritized_folders" | fzf)
 
-  # Open in a new tmux session if a directory is selected
+  # Create a new tmux session if a directory is selected
   if [ -n "$selected_path" ]; then
-    tmux new-session -c "$selected_path"
+    local session_name=$(basename "$selected_path")
+    tmux new-session -d -s "$session_name" -c "$selected_path"
+    tmux switch-client -n
   fi
 }
 
