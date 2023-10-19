@@ -9,7 +9,7 @@ vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 -- Move the selected lines one line up in visual mode
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
--- Join lines without losing cursor position in normal mode 
+-- Join lines without losing cursor position in normal mode
 vim.keymap.set("n", "J", "mzJ`z")
 
 -- Scroll down half a screen and recenter the screen in normal mode
@@ -25,16 +25,13 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 -- Paste from the system clipboard in normal, visual, and visual block modes
-vim.keymap.set({"n", "v", "x"}, "<leader>p", [["+p]])
+vim.keymap.set({ "n", "v", "x" }, "<leader>p", [["+p]])
 
 -- Yank selected text into system clipboard in normal and visual modes
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 
 -- Yank from cursor to end of line into system clipboard in normal mode
 vim.keymap.set("n", "<leader>Y", [["+Y]])
-
--- Delete selected text into a black-hole register in normal and visual modes
-vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
 -- Exit insert mode to normal mode using Ctrl+C
 vim.keymap.set("i", "<C-c>", "<Esc>")
