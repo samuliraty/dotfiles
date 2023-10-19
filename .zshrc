@@ -12,8 +12,7 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /Users/samuliraty/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 bindkey '^I' autosuggest-accept
 
 export NVM_DIR="$HOME/.config/nvm"
