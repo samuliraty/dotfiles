@@ -19,4 +19,6 @@ Run the linuxbrew installation and follow the instructions.
 ## Bootstrap
 ```
 ~/bootstrap.sh
+zsh
+source ~/.zshrc
 ```
