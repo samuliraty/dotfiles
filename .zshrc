@@ -30,7 +30,7 @@ fuzzy_cd() {
 
   # Create a new tmux session if a directory is selected
   if [ -n "$selected_path" ]; then
-    local session_name=$(basename "$selected_path")
+    local session_name=$(basename "$selected_path")/
     tmux new-session -d -s "$session_name" -c "$selected_path"
     tmux switch-client -n
   fi
