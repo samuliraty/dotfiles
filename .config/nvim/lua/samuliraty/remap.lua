@@ -69,3 +69,6 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 -- Save and switch to netrw
 vim.api.nvim_set_keymap('n', 'ZZ', ':w<CR>:e .<CR>', { noremap = true, silent = true })
 vim.cmd[[ command! WQ w | e . ]]
+
+-- Go back to previous buffer
+vim.keymap.set("n", "<leader>b", ":bprev<CR>")
