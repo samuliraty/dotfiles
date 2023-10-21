@@ -7,7 +7,6 @@ if [[ "$WSL_DISTRO_NAME" == "Ubuntu" ]]; then
   eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
   sudo apt-get install build-essential
   brew install gcc zsh
-  chsh -s "$(which zsh)"
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" --keep-zshrc
 fi
 
