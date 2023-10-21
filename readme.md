@@ -13,6 +13,4 @@ wsl --install Ubuntu
 ```bash
 git clone https://github.com/samuliraty/dotfiles.git ~/dotfiles && rsync -a ~/dotfiles/ ~/ && rm -rf ~/dotfiles
 ~/bootstrap.sh
-zsh
-source ~/.zshrc
 ```
