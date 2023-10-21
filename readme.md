@@ -10,12 +10,6 @@ Set-Content -Path "~/.wslconfig" -Value "[experimental]`nnetworkingMode=mirrored
 wsl
 ```
 
-### Linux
-Run linuxbrew installation and follow the instructions.
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
 ## Bootstrap
 ```bash
 git clone https://github.com/samuliraty/dotfiles.git ~/dotfiles && rsync -a ~/dotfiles/ ~/ && rm -rf ~/dotfiles
