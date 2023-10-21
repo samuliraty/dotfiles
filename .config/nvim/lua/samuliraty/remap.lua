@@ -33,6 +33,9 @@ vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 -- Yank from cursor to end of line into system clipboard in normal mode
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
+-- Yank current line into system clipboard in normal mode
+vim.keymap.set("n", "<leader>yy", [["+yy]])
+
 -- Exit insert mode to normal mode using Ctrl+C
 vim.keymap.set("i", "<C-c>", "<Esc>")
 
