@@ -5,9 +5,8 @@
 ### Windows
 Install WSL and configure experimental settings to fix VPN issues.
 ```ps
-wsl --install
 Set-Content -Path "~/.wslconfig" -Value "[experimental]`nnetworkingMode=mirrored`ndnsTunneling=true"
-wsl
+wsl --install
 ```
 
 ## Bootstrap
