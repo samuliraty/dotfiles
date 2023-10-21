@@ -1,10 +1,5 @@
 export XDG_CONFIG_HOME="$HOME/.config"
 
-if [ ! -f ~/.bootstrap_done ]; then
- chmod +x ~/bootstrap.sh
- ~/bootstrap.sh
-fi
-
 if [[ "$WSL_DISTRO_NAME" == "Ubuntu" ]]; then
   eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
