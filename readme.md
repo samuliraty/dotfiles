@@ -6,7 +6,7 @@
 Install WSL and configure experimental settings to fix VPN issues.
 ```ps
 Set-Content -Path "~/.wslconfig" -Value "[experimental]`nnetworkingMode=mirrored`ndnsTunneling=true"
-wsl --install
+wsl --install Ubuntu
 ```
 
 ## Bootstrap
