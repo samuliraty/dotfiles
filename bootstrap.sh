@@ -2,7 +2,6 @@
 
 echo "🧙 I solemnly swear that I am up to no good. 🪄✨"
 
-if [[ -n "$WSL_DISTRO_NAME" ]]; then
   brew install zsh
   chsh -s "$(which zsh)"
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" --keep-zshrc

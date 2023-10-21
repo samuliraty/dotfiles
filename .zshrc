@@ -5,8 +5,8 @@ if [ ! -f ~/.bootstrap_done ]; then
  ~/bootstrap.sh
 fi
 
-if [[ ! -z "$WSL_DISTRO_NAME" ]]; then
-    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+if [[ "$WSL_DISTRO_NAME" == "Ubuntu" ]]; then
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
 
 export ZSH="$HOME/.oh-my-zsh"
