@@ -5,6 +5,10 @@ if [ ! -f ~/.bootstrap_done ]; then
  ~/bootstrap.sh
 fi
 
+if [[ ! -z "$WSL_DISTRO_NAME" ]]; then
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
+
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git)
