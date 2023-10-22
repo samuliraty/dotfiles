@@ -42,9 +42,6 @@ vim.keymap.set("i", "<C-c>", "<Esc>")
 -- Disable the functionality of the Q key in normal mode
 vim.keymap.set("n", "Q", "<nop>")
 
--- Create a new tmux window running the tmux-sessionizer script
-vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
-
 -- Format the code using Language Server Protocol
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
