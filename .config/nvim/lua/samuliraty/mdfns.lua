@@ -8,7 +8,7 @@ function file_exists(path)
     end
 end
 
-local function create_note()
+local function create_file()
     local word
     local start_pos, end_pos
 
@@ -58,6 +58,6 @@ end
 vim.api.nvim_create_autocmd("FileType", {
     pattern = "markdown",
     callback = function(ev)
-        vim.keymap.set({ "n", "v" }, "<leader>nn", create_note)
+        vim.keymap.set({ "n", "v" }, "<leader>nf", create_file)
     end
 })
