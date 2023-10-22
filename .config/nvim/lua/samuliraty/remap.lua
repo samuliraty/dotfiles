@@ -71,4 +71,4 @@ vim.api.nvim_set_keymap('n', 'ZZ', ':w<CR>:e .<CR>', { noremap = true, silent = 
 vim.cmd[[ command! WQ w | e . ]]
 
 -- Go back to previous buffer
-vim.keymap.set("n", "<leader>b", ":bprev<CR>")
+vim.keymap.set("n", "<leader>b", ":b#<CR>")
