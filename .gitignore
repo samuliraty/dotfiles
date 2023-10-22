@@ -1,6 +1,6 @@
 *
 !.gitignore
-!.zshrc
+
 !bootstrap.sh
 !readme.md
 !.config/
@@ -11,3 +11,5 @@
 !.config/tmux/*
 !.hammerspoon/
 !.hammerspoon/*
+!.yabairc
+!.zshrc
