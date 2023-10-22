@@ -1,0 +1,10 @@
+[user]
+	email = 32360408+samuliraty@users.noreply.github.com
+	name = Samuli Räty
+[alias]
+	ps = push
+    pl = pull
+	co = checkout
+	b = branch
+	c = commit -m
+	st = status -sb
