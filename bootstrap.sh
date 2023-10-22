@@ -9,7 +9,7 @@ if [[ "$WSL_DISTRO_NAME" == "Ubuntu" ]]; then
   brew install zsh gcc
 fi
 
-brew install powerlevel10k nvm fzf zsh-autosuggestions zsh-syntax-highlighting tmux nvim
+brew install powerlevel10k nvm fzf zsh-autosuggestions zsh-syntax-highlighting tmux nvim firefox
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --keep-zshrc
 
