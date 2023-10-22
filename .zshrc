@@ -5,10 +5,10 @@ if [[ "$WSL_DISTRO_NAME" == "Ubuntu" ]]; then
 fi
 
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="powerlevel10k/powerlevel10k"
+source $HOMEBREW_PREFIX/share/powerlevel10k/powerlevel10k.zsh-theme
+[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
