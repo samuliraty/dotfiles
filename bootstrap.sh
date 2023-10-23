@@ -8,11 +8,13 @@ if [[ "$WSL_DISTRO_NAME" == "Ubuntu" ]]; then
   brew install zsh gcc llvm
   sudo apt-get install build-essential
   echo '/home/linuxbrew/.linuxbrew/bin/zsh' | sudo tee -a /etc/shells
-  gcc_version=$(ls /home/linuxbrew/.linuxbrew/bin | grep -Eo 'gcc-[^-]+' | cut -d- -f2 | sort -V | head -n1)
-  ln -s "/home/linuxbrew/.linuxbrew/bin/gcc-$gcc_version" "/home/linuxbrew/.linuxbrew/bin/gcc"
 fi
 
 brew install powerlevel10k nvm fzf zsh-autosuggestions zsh-syntax-highlighting tmux nvim lazygit gh
+git config --global user.email "32360408+samuliraty@users.noreply.github.com"
+git config --global user.name "Samuli Räty"
+gh auth login
+gh repo clone notes
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --keep-zshrc
 
