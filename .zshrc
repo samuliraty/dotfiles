@@ -36,3 +36,4 @@ fuzzy_cd() {
 }
 
 bindkey -s '^G' 'fuzzy_cd\n'
+tmux
