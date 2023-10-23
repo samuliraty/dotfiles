@@ -8,8 +8,8 @@ if [[ "$WSL_DISTRO_NAME" == "Ubuntu" ]]; then
   sudo apt-get install build-essential
   brew install zsh gcc
   echo '/home/linuxbrew/.linuxbrew/bin/zsh' | sudo tee -a /etc/shells
-  gcc_version=$(find /home/linuxbrew/.linuxbrew/bin -type f -name 'gcc-*' | grep -E 'gcc-[0-9]+$' | sort -V | tail -n1)
-  ln -s "$gcc_version" "/home/linuxbrew/.linuxbrew/bin/gcc"
+  gcc_version=$(ls /home/linuxbrew/.linuxbrew/bin | grep -Eo 'gcc-[^-]+' | cut -d- -f2 | sort -V | head -n1)
+  ln -s "/home/linuxbrew/.linuxbrew/bin/gcc-$gcc_version" "/home/linuxbrew/.linuxbrew/bin/gcc"
 fi
 
 brew install powerlevel10k nvm fzf zsh-autosuggestions zsh-syntax-highlighting tmux nvim lazygit gh
