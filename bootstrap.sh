@@ -8,7 +8,10 @@ if [[ "$WSL_DISTRO_NAME" == "Ubuntu" ]]; then
   brew install zsh gcc llvm
   sudo apt-get install build-essential
   echo '/home/linuxbrew/.linuxbrew/bin/zsh' | sudo tee -a /etc/shells
+  winusr=$(cmd.exe /c 'echo %USERNAME%' 2>/dev/null | tr -d '\r')
+  git config --global credential.helper "/mnt/c/Users/$winusr/AppData/Local/Programs/Git/mingw64/bin/git-credential-manager.exe"
 fi
+
 
 brew install powerlevel10k nvm fzf zsh-autosuggestions zsh-syntax-highlighting tmux nvim lazygit gh
 git config --global user.email "32360408+samuliraty@users.noreply.github.com"
