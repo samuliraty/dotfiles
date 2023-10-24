@@ -2,16 +2,17 @@ export XDG_CONFIG_HOME="$HOME/.config"
 
 if [[ "$WSL_DISTRO_NAME" == "Ubuntu" ]]; then
   eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+else
+  source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
 
 export ZSH="$HOME/.oh-my-zsh"
 source $HOMEBREW_PREFIX/share/powerlevel10k/powerlevel10k.zsh-theme
-[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[ ! -f ~/.p10k.zsh ] || source ~/.p10k.zsh
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 bindkey '^I' autosuggest-accept
 
 export NVM_DIR="$HOME/.config/nvm"
