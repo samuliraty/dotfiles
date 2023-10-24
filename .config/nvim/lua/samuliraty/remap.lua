@@ -1,5 +1,8 @@
 vim.g.mapleader = " "
 
+-- Go to normal mode
+vim.keymap.set({ "i", "v", "x" }, "<C-h>", "<Esc>")
+
 -- Open the file explorer in the current window
 vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
 
@@ -35,9 +38,6 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 
 -- Yank current line into system clipboard in normal mode
 vim.keymap.set("n", "<leader>yy", [["+yy]])
-
--- Exit insert mode to normal mode using Ctrl+C
-vim.keymap.set("i", "<C-c>", "<Esc>")
 
 -- Disable the functionality of the Q key in normal mode
 vim.keymap.set("n", "Q", "<nop>")
