@@ -28,7 +28,7 @@ vim.keymap.set("n", "<leader>j", function() ui.nav_file(1) end)
 vim.keymap.set("n", "<leader>k", function() ui.nav_file(2) end)
 vim.keymap.set("n", "<leader>l", function() ui.nav_file(3) end)
 
-vim.keymap.set("n", "<leader>;", function()
+vim.keymap.set("n", "<leader>ö", function()
   local currentMonth = os.date("%Y%m")
   local fullFilePath = vim.fn.expand(NOTES_PATH .. currentMonth .. ".md")
   check_or_create_file(fullFilePath)
