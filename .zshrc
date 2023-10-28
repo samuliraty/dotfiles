@@ -28,16 +28,14 @@ fuzzy_cd() {
   # Run fzf
   selected_path=$(echo "$prioritized_folders" | fzf)
 
-  # Create a new tmux session if a directory is selected
+  # Create a new iTerm tab if a directory is selected
   if [ -n "$selected_path" ]; then
-    local session_name=$(basename "$selected_path")/
-    tmux new-session -d -s "$session_name" -c "$selected_path"
-    tmux switch-client -n
+    osascript \
+      -e 'tell application "iTerm" to tell current window to create tab with default profile'
+
+    osascript \
+      -e "tell application \"iTerm\" to do script \"cd $selected_path\" in the last session of the current tab of the current window"
   fi
 }
 
 bindkey -s '^G' 'fuzzy_cd\n'
-
-if [ -z "$TMUX" ]; then
-  tmux
-fi

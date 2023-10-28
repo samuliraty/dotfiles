@@ -7,8 +7,6 @@
 !.config/nvim/
 !.config/nvim/*
 !.config/nvim/**/*
-!.config/tmux/
-!.config/tmux/*
 !.hammerspoon/
 !.hammerspoon/*
 !.p10k.zsh
