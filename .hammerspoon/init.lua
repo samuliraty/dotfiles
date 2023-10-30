@@ -9,3 +9,7 @@ end)
 hs.hotkey.bind({"cmd"}, "2", function()
   hs.application.launchOrFocus("Firefox")
 end)
+
+hs.hotkey.bind({"cmd"}, "4", function()
+  hs.application.launchOrFocus("Obsidian")
+end)
